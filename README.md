@@ -1,4 +1,4 @@
-# 📸 Fotaza - Proyecto Integrador 🎥
+# 📸 Fotaza 2 - Proyecto Integrador 🎥
 
 Este es el repositorio para el proyecto final de la cátedra **Programación Web II**.
 El objetivo es desarrollar una comunidad multimedia para compartir y gestionar imágenes y videos.
@@ -18,7 +18,7 @@ Actualmente el proyecto se encuentra en la fase de **configuración inicial**
 
 ---
 
-## 📂Estructura Actual
+## 📂 Estructura Actual
 
 - `README.md`: Documentación del proyecto.
 - `.gitignore`: Configuración para mantener el repositorio limpio.(vació aun)
