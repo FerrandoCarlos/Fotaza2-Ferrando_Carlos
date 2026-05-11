@@ -17,7 +17,6 @@ Desarrollado para la cátedra **Programación Web II**.
     Fotaza2-Ferrando_Carlos/
     │
     ├── app.js                    # Entry point
-    ├── tailwind.config.js        # Configuración de Tailwind
     ├── .env.example              # Variables de entorno (plantilla)
     ├── .gitignore
     ├── README.md
