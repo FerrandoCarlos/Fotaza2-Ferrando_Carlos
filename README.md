@@ -1,36 +1,91 @@
-# 📸 Fotaza 2 - Proyecto Integrador 🎥
+# 📸 Fotaza 2 — Proyecto Integrador
 
-Este es el repositorio para el proyecto final de la cátedra **Programación Web II**.
-El objetivo es desarrollar una comunidad multimedia para compartir y gestionar imágenes y videos.
+Comunidad web para compartir y gestionar imágenes.
+Desarrollado para la cátedra **Programación Web II**.
+
+## 🛠 Stack
+
+- **Runtime:** Node.js
+- **Framework:** Express
+- **ORM:** Sequelize
+- **Base de datos:** PostgreSQL
+- **Motor de plantillas:** Pug
+- **CSS:** Tailwind CSS
+- **Autenticación:** express-session + connect-session-sequelize
+
+## 📁 Estructura del proyecto
+
+        Fotaza2-Ferrando_Carlos/
+        │
+        ├── app.js # Entry point
+        ├── tailwind.config.js # Configuración de Tailwind
+        ├── postcss.config.js # Configuración de PostCSS
+        ├── .env.example # Variables de entorno (plantilla)
+        ├── .gitignore
+        ├── README.md
+        │
+        ├── config/
+        │ ├── db.js # Singleton — conexión Sequelize/PostgreSQL
+        │ └── session.js # Configuración de sesiones
+        │
+        ├── src/
+        │ ├── controllers/ # Lógica de cada feature
+        │ ├── models/ # Modelos Sequelize
+        │ ├── services/ # Lógica de negocio (DRY)
+        │ ├── middlewares/ # authGuard, roleGuard
+        │ │ └── auth.js
+        │ ├── routes/ # Definición de rutas
+        │ │ └── index.js
+        │ └── utils/ # Helpers reutilizables
+        │
+        ├── views/
+        │ ├── layout.pug # Layout base
+        │ ├── mixins/ # Componentes reutilizables (como props)
+        │ │ ├── card.pug
+        │ │ ├── alert.pug
+        │ │ └── avatar.pug
+        │ ├── partials/ # Bloques fijos
+        │ │ ├── navbar.pug
+        │ │ └── footer.pug
+        │ └── pages/ # Páginas completas
+        │ ├── index.pug
+        │ ├── login.pug
+        │ └── register.pug
+        │
+        └── public/
+        ├── css/
+        │ └── input.css # Entrada de Tailwind
+        ├── js/
+        └── uploads/ # Imágenes subidas por usuarios
 
 ---
 
-## 📅 Estado del proyecto (Día 1)
+## 🚀 Cómo correr el proyecto
 
-Actualmente el proyecto se encuentra en la fase de **configuración inicial**
+1.  Clonar el repositorio
 
-### 🛠 Decisiones Técnicas Tomadas:
+    git clone https://github.com/FerrandoCarlos/Fotaza2-Ferrando_Carlos.git
 
-- **Entorno:** Node.js con Express.
-- **Maquetado:** HTML5 y Bootstrap 5 (Responsive Design)
-- **Motor de Plantillas:** Pug
-- **Base de Datos:** PostgreSQL (despliegue en Vercel)
+2.  Instalar dependencias
 
----
+    npm install
 
-## 📂 Estructura Actual
+3.  Configurar variables de entorno
 
-- `README.md`: Documentación del proyecto.
-- `.gitignore`: Configuración para mantener el repositorio limpio.(vació aun)
+        cp .env.example .env
 
----
+    Editar `.env` con tus datos de PostgreSQL
 
-## 🚀 Próximos Pasos
+4.  Compilar Tailwind _(terminal 1)_
 
-1. Maquetado de la interfaz principal (galería de fotos) en HTML/CSS
-2. Configuración del servidor básico con Express.
-3. Definición del modelo de datos para PostgreSQL.
+    npm run tailwind
+
+5.  Arrancar el servidor _(terminal 2)_
+
+    npm run dev
 
 ---
 
-**Desarrollado por:** Carlos Ferrando
+## 👤 Desarrollado por
+
+**Carlos Ferrando** — Programación Web II
