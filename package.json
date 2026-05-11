@@ -1,0 +1,27 @@
+{
+  "name": "fotaza2-ferrando_carlos",
+  "version": "1.0.0",
+  "description": "Comunidad web para compartir y gestionar imágenes",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "tailwind": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css --watch"
+  },
+  "author": "Carlos Ferrando",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.4",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "nodemon": "^3.1.14",
+    "tailwindcss": "^4.3.0"
+  }
+}
