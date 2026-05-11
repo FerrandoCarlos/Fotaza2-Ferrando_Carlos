@@ -6,59 +6,55 @@ Desarrollado para la cátedra **Programación Web II**.
 ## 🛠 Stack
 
 - **Runtime:** Node.js
-- **Framework:** Express
+- **Framework:** Express v5
 - **ORM:** Sequelize
 - **Base de datos:** PostgreSQL
 - **Motor de plantillas:** Pug
-- **CSS:** Tailwind CSS
-- **Autenticación:** express-session + connect-session-sequelize
+- **CSS:** Tailwind CSS v4
 
 ## 📁 Estructura del proyecto
 
-        Fotaza2-Ferrando_Carlos/
-        │
-        ├── app.js # Entry point
-        ├── tailwind.config.js # Configuración de Tailwind
-        ├── postcss.config.js # Configuración de PostCSS
-        ├── .env.example # Variables de entorno (plantilla)
-        ├── .gitignore
-        ├── README.md
-        │
-        ├── config/
-        │ ├── db.js # Singleton — conexión Sequelize/PostgreSQL
-        │ └── session.js # Configuración de sesiones
-        │
-        ├── src/
-        │ ├── controllers/ # Lógica de cada feature
-        │ ├── models/ # Modelos Sequelize
-        │ ├── services/ # Lógica de negocio (DRY)
-        │ ├── middlewares/ # authGuard, roleGuard
-        │ │ └── auth.js
-        │ ├── routes/ # Definición de rutas
-        │ │ └── index.js
-        │ └── utils/ # Helpers reutilizables
-        │
-        ├── views/
-        │ ├── layout.pug # Layout base
-        │ ├── mixins/ # Componentes reutilizables (como props)
-        │ │ ├── card.pug
-        │ │ ├── alert.pug
-        │ │ └── avatar.pug
-        │ ├── partials/ # Bloques fijos
-        │ │ ├── navbar.pug
-        │ │ └── footer.pug
-        │ └── pages/ # Páginas completas
-        │ ├── index.pug
-        │ ├── login.pug
-        │ └── register.pug
-        │
-        └── public/
+    Fotaza2-Ferrando_Carlos/
+    │
+    ├── app.js                    # Entry point
+    ├── tailwind.config.js        # Configuración de Tailwind
+    ├── .env.example              # Variables de entorno (plantilla)
+    ├── .gitignore
+    ├── README.md
+    │
+    ├── config/
+    │   ├── db.js                 # Singleton — conexión Sequelize/PostgreSQL
+    │   └── session.js            # Configuración de sesiones
+    │
+    ├── src/
+    │   ├── controllers/          # Lógica de cada feature
+    │   ├── models/               # Modelos Sequelize
+    │   ├── services/             # Lógica de negocio (DRY)
+    │   ├── middlewares/          # authGuard, roleGuard
+    │   │   └── auth.js
+    │   ├── routes/               # Definición de rutas
+    │   │   └── index.js
+    │   └── utils/                # Helpers reutilizables
+    │
+    ├── views/
+    │   ├── layout.pug            # Layout base
+    │   ├── mixins/               # Componentes reutilizables
+    │   │   ├── card.pug
+    │   │   ├── alert.pug
+    │   │   └── avatar.pug
+    │   ├── partials/             # Bloques fijos
+    │   │   ├── navbar.pug
+    │   │   └── footer.pug
+    │   └── pages/                # Páginas completas
+    │       ├── index.pug
+    │       ├── login.pug
+    │       └── register.pug
+    │
+    └── public/
         ├── css/
-        │ └── input.css # Entrada de Tailwind
+        │   └── input.css         # Entrada de Tailwind
         ├── js/
-        └── uploads/ # Imágenes subidas por usuarios
-
----
+        └── uploads/              # Imágenes subidas por usuarios
 
 ## 🚀 Cómo correr el proyecto
 
@@ -83,8 +79,6 @@ Desarrollado para la cátedra **Programación Web II**.
 5.  Arrancar el servidor _(terminal 2)_
 
     npm run dev
-
----
 
 ## 👤 Desarrollado por
 
